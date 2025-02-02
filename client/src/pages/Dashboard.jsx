@@ -51,13 +51,13 @@ const Dashboard = () => {
   return (
     <div>
       <Header heading={"OrbitPlan - Dashboard"} />
-      <main className="container">
+      <main className="container ">
         <div className="row">
           <div className="col-md-2">
             <Sidebar />
           </div>
           <div className="col-md-10">
-            <div className="card mt-5">
+            <div className="card mt-5 border-success">
               <div className="card-body">
                 <h2>Projects</h2>
                 <div className="row">

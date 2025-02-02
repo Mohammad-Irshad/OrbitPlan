@@ -77,7 +77,7 @@ const Projects = () => {
             <Sidebar />
           </div>
           <div className="col-md-10 mt-5">
-            <div className="card">
+            <div className="card border-success">
               <div className="card-body">
                 <h3 className="text-center">Projects List</h3>
                 <hr />

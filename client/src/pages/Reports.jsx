@@ -235,7 +235,7 @@ const Reports = () => {
           <div className="col-md-2">
             <Sidebar />
           </div>
-          <div className="col-md-10 mt-5">
+          <div className="col-md-10 mt-5 border-success">
             <div className="row">
               <div className="col-md-6 mb-3">
                 <Bar
