@@ -13,7 +13,6 @@ const Projects = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  // const {logedInUser} = useSelector((state) => state.user)
   const logedInUser = {
     name: "Guest User",
     email: "guestUser@gmail.com",
@@ -87,11 +86,11 @@ const Projects = () => {
                     {logedInUserProjects.map((project) => {
                       return (
                         <Link
-                          to={`/userProject/${project._id}`} // Navigates to a project detail page
+                          to={`/userProject/${project._id}`}
                           key={project._id}
                           className="list-group-item list-group-item-action"
                           state={logedInUserProjects}
-                          style={{ display: "block", textDecoration: "none" }} // Optional: Styling
+                          style={{ display: "block", textDecoration: "none" }}
                         >
                           <strong className="text-success">
                             {project.name}

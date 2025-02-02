@@ -19,10 +19,8 @@ const UserLogin = () => {
     try {
       const result = await dispatch(loginUser(userDetails)).unwrap();
       navigate("/dashboard");
-      // console.log("Login successful : ",result)
       setLoading(false);
     } catch (err) {
-      // console.log("Login failed : ", err.message || err.response?.data?.message || "Something went wrong")
       setErroMessage(err.message);
       setLoading(false);
     }

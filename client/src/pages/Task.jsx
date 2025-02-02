@@ -72,16 +72,6 @@ const Task = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // const completeHadler = (id) => {
-  //   const updatedData = { status: "Completed" };
-  //   dispatch(updateTask({ id, updatedData }));
-  // };
-
-  // const submitHandler = () => {
-  //   console.log("Form data", formData);
-  //   dispatch(updateTask({ id, updatedData: formData }));
-  // };
-
   const completeHadler = useCallback(
     (id) => {
       const updatedData = { status: "Completed" };
@@ -91,7 +81,6 @@ const Task = () => {
   );
 
   const submitHandler = useCallback(() => {
-    console.log("Form data", formData);
     dispatch(updateTask({ id, updatedData: formData }));
   }, [dispatch, id, formData]); // Dependencies
 

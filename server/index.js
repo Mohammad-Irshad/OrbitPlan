@@ -57,24 +57,6 @@ app.get("/projects", verifyJWT, getProjects); // Get all projects
 app.post("/tags", verifyJWT, addTag); // Add new tags
 app.get("/tags", verifyJWT, getTag); // get all tags
 
-// const newUserData = {
-//     name : "King Khan",
-//     rollNo : 1234,
-//     class : 12
-// }
-
-// async function addUser(userData){
-//     try{
-//         const user = new TestOne(userData)
-//         const saveUser = await user.save()
-//         console.log("User added successfully!")
-//     }catch(err){
-//         console.log("Error occured in adding new user : ",err)
-//     }
-// }
-
-// addUser(newUserData)
-
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

@@ -16,8 +16,6 @@ const Teams = () => {
   const dispatch = useDispatch();
   const { allTeams, status } = useSelector((state) => state.teams);
 
-  console.log(allTeams);
-
   const submitHandler = async (e) => {
     e.preventDefault();
     const teamExists = allTeams.some(
@@ -71,7 +69,6 @@ const Teams = () => {
                     {allTeams.map((team) => {
                       return (
                         <Link
-                          // to={`/projects/${project._id}`} // Navigates to a project detail page
                           key={team._id}
                           className="list-group-item list-group-item-action"
                           style={{ display: "block", textDecoration: "none" }} // Optional: Styling

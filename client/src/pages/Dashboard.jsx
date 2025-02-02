@@ -134,8 +134,6 @@ const Dashboard = () => {
                       <p>No tasks for now.</p>
                     )}
                   </div>
-                  {/* <br />
-                  <button className="btn btn-primary">Add New Task</button> */}
                 </section>
               </div>
             </div>

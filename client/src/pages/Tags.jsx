@@ -43,9 +43,6 @@ const Tags = () => {
             <h2>Existed Tags</h2>
             <div>
               {allTags.map((tag, index) => (
-                // <span key={index} className="badge badge-pill badge-secondary m-1">
-                //     {tag.name}
-                // </span>
                 <span key={index} class="badge text-bg-success mx-1 fs-6 mb-2">
                   #{tag.name}
                 </span>
